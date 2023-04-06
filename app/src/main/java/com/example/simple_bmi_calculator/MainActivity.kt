@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "ENTER A VALID NUMBER", Toast.LENGTH_SHORT).show()
             }
             else{
-                var third_num = second_num.toDouble() * second_num.toDouble()
-                var answer = first_num.toDouble() / third_num.toFloat()
+                var third_num = second_num.toDouble() / 100
+                var fourth_num = third_num.toFloat() * third_num.toFloat()
+                var answer = first_num.toDouble() / fourth_num.toFloat()
                 text_display.text = answer.toString()
 //                Toast.makeText(this, "trying to calculate BMI", Toast.LENGTH_SHORT).show()
             }
